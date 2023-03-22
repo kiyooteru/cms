@@ -6,7 +6,7 @@ $password = "";
 $name = "cms";
 
 $connection = new mysqli($servername, $username, $password, $name);
-if($connection) {
-    echo "we are connected";
+if(!$connection) {
+    echo "Connection failed";
 }
 ?>
